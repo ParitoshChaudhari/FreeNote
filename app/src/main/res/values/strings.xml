@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Notes</string>
+
+    <string name="developer_name">Developed By :\n Paritosh Chaudhari</string>
+    <string name="app_name_splashScreen">Note App</string>
+    <string name="motivation_message_splashScreen">Life is too Fast Don\'t Forgot everything\n Just note it.</string>
+
+    <string name="title_insert_notes">Title…</string>
+    <string name="subtitle">Subtitle....</string>
+    <string name="Notes">Notes…</string>
+    <string name="Priority">Priority</string>
+    <string name="todo">TODO</string>
+    <string name="deleteNoteMessage">Are you sure \n To delete this note?</string>
+
+<!--    Filter Property-->
+    <string name="low_to_high">Low to High</string>
+    <string name="high_to_low">High to low</string>
+    <string name="no_filter">No filter</string>
+
+</resources>
