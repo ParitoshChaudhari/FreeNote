@@ -20,7 +20,6 @@ import java.util.List;
 
 public class NotesAdaptor extends RecyclerView.Adapter<NotesAdaptor.notesViewHolder> {
 
-    //you have created some thing protect by click on above class
 
     MainActivity mainActivity;
     List<Notes> notes;
@@ -33,6 +32,7 @@ public class NotesAdaptor extends RecyclerView.Adapter<NotesAdaptor.notesViewHol
         allNotesItem= new ArrayList<>(notes);
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     public void searchNotes(List<Notes> filteredNotes){
         this.notes = filteredNotes;
         notifyDataSetChanged();
@@ -40,12 +40,12 @@ public class NotesAdaptor extends RecyclerView.Adapter<NotesAdaptor.notesViewHol
 
     @NonNull
     @Override
-    public notesViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public notesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new notesViewHolder(LayoutInflater.from(mainActivity).inflate(R.layout.item_notes,parent,false));
     }
 
     @Override
-    public void onBindViewHolder(notesViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull notesViewHolder holder, int position) {
 
         Notes note = notes.get(position);
 

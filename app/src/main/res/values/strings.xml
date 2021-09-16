@@ -5,16 +5,52 @@
     <string name="app_name_splashScreen">Note App</string>
     <string name="motivation_message_splashScreen">Life is too Fast Don\'t Forgot everything\n Just note it.</string>
 
-    <string name="title_insert_notes">Title…</string>
+    <string name="deleteNoteMessage">Are you sure \n To delete this note?</string>
+
+
+<!--    Insert Notes Layout-->
+    <string name="title">Title…</string>
     <string name="subtitle">Subtitle....</string>
     <string name="Notes">Notes…</string>
     <string name="Priority">Priority</string>
-    <string name="todo">TODO</string>
-    <string name="deleteNoteMessage">Are you sure \n To delete this note?</string>
-
-<!--    Filter Property-->
+    <string name="content_desc_red">Low Priority Task</string>
+    <string name="content_desc_yellow">Medium Priority Task</string>
+    <string name="content_desc_green">High Priority Task</string>
+    <string name="confirmation_button">Do you want to confirm this Note</string>
+    
+<!--    Main Activity Layout-->
+    <string name="content_desc_filter">Filter For Notes</string>
+    <string name="no_filter">No filter</string>
     <string name="low_to_high">Low to High</string>
     <string name="high_to_low">High to low</string>
-    <string name="no_filter">No filter</string>
+    <string name="content_desc_createNewNote">Create new Note</string>
+
+
+<!--    Splash Screen-->
+    <string name="content_desc_applicationLogo">Application Logo</string>
+
+
+
+<!--    Update Activity Layout-->
+    <string name="hint_title">title…</string>
+    <string name="hint_subTitle">SubTitle…</string>
+    <string name="content_desc_red_">Low Priority Task</string>
+    <string name="content_desc_yellow_">Medium Priority Task</string>
+    <string name="content_desc_green_">High Priority Task</string>
+    <string name="confirmation_button_">Do you want to confirm this Note</string>
+    <string name="content_desc_updateNote">Update Note</string>
+
+
+<!--    Delete Bottom Sheet Layout-->
+    <string name="text_no">NO</string>
+    <string name="text_yes">YES</string>
+
+
+<!--    Item Notes Layout-->
+    <string name="text_title">title</string>
+    <string name="text_subTitle">subTitle</string>
+    <string name="text_date">dd MMMM yyyy</string>
+
+
 
 </resources>

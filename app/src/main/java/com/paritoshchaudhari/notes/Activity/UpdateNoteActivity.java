@@ -10,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -132,7 +131,7 @@ public class UpdateNoteActivity extends AppCompatActivity {
         if(item.getItemId()==R.id.ic_delete){
             BottomSheetDialog sheetDialog = new BottomSheetDialog(UpdateNoteActivity.this,R.style.BottomSheetStyle);
 
-            View view = LayoutInflater.from(UpdateNoteActivity.this).inflate(R.layout.delete_bottom_sheet,(LinearLayout)findViewById(R.id.bottomSheet));
+            View view = LayoutInflater.from(UpdateNoteActivity.this).inflate(R.layout.delete_bottom_sheet, findViewById(R.id.bottomSheet));
             sheetDialog.setContentView(view);
             sheetDialog.show();
 
@@ -149,9 +148,7 @@ public class UpdateNoteActivity extends AppCompatActivity {
 
 
             //no button on click
-            no.setOnClickListener(v -> {
-            sheetDialog.dismiss();
-            });
+            no.setOnClickListener(v -> sheetDialog.dismiss());
 
         }
         return true;

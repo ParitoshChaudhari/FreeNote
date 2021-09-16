@@ -9,6 +9,8 @@ import android.os.Handler;
 import com.paritoshchaudhari.notes.MainActivity;
 import com.paritoshchaudhari.notes.R;
 
+import java.util.Objects;
+
 public class SplashScreen extends AppCompatActivity {
 
     @Override
@@ -17,14 +19,11 @@ public class SplashScreen extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
 
         //for hiding tool bar
-        getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                startActivity(new Intent(SplashScreen.this, MainActivity.class));
-                finish();
-            }
+        new Handler().postDelayed(() -> {
+            startActivity(new Intent(SplashScreen.this, MainActivity.class));
+            finish();
         },2000);
     }
 }

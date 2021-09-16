@@ -15,15 +15,17 @@
         android:layout_marginTop="28dp"
         android:background="@drawable/edit_text_background"
         android:fontFamily="@font/product_sans_regular"
-        android:hint="@string/title_insert_notes"
+        android:hint="@string/title"
         android:textColorHint="@color/grey"
         android:textColor="@color/black"
+        android:inputType="text"
+        android:importantForAutofill="no"
         android:padding="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
-        android:inputType="text" />
+        tools:ignore="MissingConstraints"/>
+
     <EditText
         android:id="@+id/notesSubtitle"
         android:layout_width="353dp"
@@ -38,7 +40,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/notesTitle"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:importantForAutofill="no"
+        android:inputType="text" />
 
     <LinearLayout
         android:layout_width="359dp"
@@ -65,22 +69,24 @@
             android:layout_margin="10dp"
             android:id="@+id/greenPriority"
             android:src="@drawable/icon_done"
-            android:background="@drawable/green_shape"/>
+            android:background="@drawable/green_shape"
+            android:contentDescription="@string/content_desc_green" />
 
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_margin="10dp"
             android:id="@+id/yellowPriority"
-            android:background="@drawable/yellow_shape" />
+            android:background="@drawable/yellow_shape"
+            android:contentDescription="@string/content_desc_yellow"/>
 
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_margin="10dp"
             android:id="@+id/redPriority"
-            android:background="@drawable/red_shape" />
-
+            android:background="@drawable/red_shape"
+            android:contentDescription="@string/content_desc_red" />
 
     </LinearLayout>
 
@@ -102,8 +108,8 @@
         app:layout_constraintTop_toBottomOf="@+id/notesSubtitle"
         app:layout_constraintVertical_bias="0.33"
         tools:ignore="MissingConstraints"
-        android:importantForAutofill="no" />
-
+        android:importantForAutofill="no"
+        android:inputType="text" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/doneNotesBtn"
@@ -120,7 +126,7 @@
         app:layout_constraintTop_toBottomOf="@+id/notesData"
         app:layout_constraintVertical_bias="0.507"
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
-        android:contentDescription="@string/todo" />
+        android:contentDescription="@string/confirmation_button" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

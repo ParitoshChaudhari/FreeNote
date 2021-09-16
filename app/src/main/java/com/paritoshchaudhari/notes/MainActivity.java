@@ -3,17 +3,13 @@ package com.paritoshchaudhari.notes;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Filter;
 import android.widget.SearchView;
 import android.widget.TextView;
 
@@ -33,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView notesRecycler;
     NotesAdaptor adaptor;
     TextView noFilter,highToLow,lowToHigh;
-
     List<Notes> filteredNotesAllList;
 
 
@@ -84,14 +79,6 @@ public class MainActivity extends AppCompatActivity {
                 setAdaptor(notes);
             }
         });
-
-//        notesViewModel.getAllNotes.observe(this,notes -> {
-//
-//            notesRecycler.setLayoutManager(new GridLayoutManager(this, 2));
-//            adaptor = new NotesAdaptor(MainActivity.this,notes);
-//            notesRecycler.setAdapter(adaptor);
-//
-//        });
     }
 
     private void loadData(int i) {
@@ -152,15 +139,11 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-
         return super.onCreateOptionsMenu(menu);
     }
 
     private void NotesFilter(String newText) {
         ArrayList<Notes> FilteredNames = new ArrayList<>();
-
-
         for(Notes notes:this.filteredNotesAllList){
             if(notes.notesTitle.contains(newText) || notes.notesSubtitle.contains(newText)){
                 FilteredNames.add(notes);
