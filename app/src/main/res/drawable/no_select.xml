@@ -2,7 +2,7 @@
 <shape  android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
 
 <!--    'No' button Shape for delete_bottom_sheet -->
-    <solid android:color="@color/grey"/>
+    <solid android:color="@color/no_button"/>
     <corners android:radius="500dp"/>
 
 </shape>

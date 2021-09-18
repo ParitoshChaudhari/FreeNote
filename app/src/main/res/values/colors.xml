@@ -15,4 +15,30 @@
 
     <color name="TextHintColor">#757575</color>
 
+<!--    Light Mode -->
+<!--    Insert Note Activity-->
+    <color name="title_light_insert">#DCD1D1</color>
+    <color name="subTitle_light_insert">#DCD1D1</color>
+    <color name="note_light_insert">#DCD1D1</color>
+    <color name="floating_button_confirm">#EA4B59</color>
+    <color name="insert_note_background">#eef3fb</color>
+
+<!--    Update Note Activity-->
+    <color name="title_light_insert_">#DCD1D1</color>
+    <color name="subTitle_light_insert_">#DCD1D1</color>
+    <color name="note_light_insert_">#DCD1D1</color>
+    <color name="floating_button_confirm_">#EA4B59</color>
+    <color name="update_note_background">#eef3fb</color>
+
+<!--    Delete Bottom Sheet Activity-->
+    <color name="yes_button">#E84D4D</color>
+    <color name="no_button">#AFAFAF</color>
+
+<!--    Main Activity-->
+    <color name="floating_button_create">#EA4B59</color>
+    <color name="recycler_view_background">#eef3fb</color>
+
+<!--    Splash Screen Activity-->
+    <color name="splash_screen_background">#eef3fb</color>
+
 </resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DFD8D8"
+    android:background="@color/update_note_background"
     android:orientation="vertical"
     tools:context=".Activity.UpdateNoteActivity">
 
@@ -16,31 +16,33 @@
         android:background="@drawable/edit_text_background"
         android:fontFamily="@font/product_sans_regular"
         android:hint="@string/hint_title"
-        android:textColorHint="@color/grey"
-        android:textColor="@color/black"
+        android:importantForAutofill="no"
+        android:inputType="text"
         android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/title_light_insert_"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:importantForAutofill="no"
-        android:inputType="text" />
+        tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
     <EditText
         android:id="@+id/updateNotesSubtitle"
         android:layout_width="353dp"
         android:layout_height="57dp"
         android:layout_marginTop="24dp"
-        android:textColorHint="@color/grey"
         android:background="@drawable/edit_text_background"
         android:fontFamily="@font/product_sans_regular"
         android:hint="@string/hint_subTitle"
-        android:textColor="@color/black"
+        android:importantForAutofill="no"
+        android:inputType="text"
         android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/subTitle_light_insert_"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/updateNotesTitle"
-        android:importantForAutofill="no"
-        android:inputType="text" />
+        tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
     <LinearLayout
         android:layout_width="359dp"
@@ -62,20 +64,22 @@
             android:textSize="20sp" />
 
         <ImageView
+            android:id="@+id/greenPriority"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_margin="10dp"
-            android:id="@+id/greenPriority"
             android:background="@drawable/green_shape"
-            android:contentDescription="@string/content_desc_green_" />
+            android:contentDescription="@string/content_desc_green_"
+            tools:ignore="ImageContrastCheck,ImageContrastCheck,ImageContrastCheck" />
 
         <ImageView
+            android:id="@+id/yellowPriority"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_margin="10dp"
-            android:id="@+id/yellowPriority"
             android:background="@drawable/yellow_shape"
-            android:contentDescription="@string/content_desc_yellow_"/>
+            android:contentDescription="@string/content_desc_yellow_"
+            tools:ignore="ImageContrastCheck,ImageContrastCheck,ImageContrastCheck" />
 
         <ImageView
             android:layout_width="25dp"
@@ -92,21 +96,22 @@
         android:id="@+id/updateNotes"
         android:layout_width="351dp"
         android:layout_height="264dp"
-        android:textColor="@color/black"
         android:background="@drawable/edit_text_background"
         android:fontFamily="@font/product_sans_regular"
         android:gravity="start"
         android:hint="@string/Notes"
-        android:textColorHint="@color/grey"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
         android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/note_light_insert_"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.558"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/updateNotesSubtitle"
         app:layout_constraintVertical_bias="0.33"
-        android:importantForAutofill="no"
-        android:inputType="textMultiLine" />
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -116,7 +121,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:src="@drawable/icon_done"
-        app:backgroundTint="#ED0707"
+        app:backgroundTint="@color/floating_button_confirm_"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.951"
